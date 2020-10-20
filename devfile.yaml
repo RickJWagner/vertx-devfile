@@ -4,11 +4,15 @@ projects:
   - name: vertx-http-booster
     source:
       location: >-
-        https://devfile-registry-crw24.apps.rickscrw3.lab.upshift.rdu2.redhat.com/resources/vertx-http-booster-vertx-http-booster-master.zip
-      type: zip
+        https://github.com/RickJWagner/vertx-devfile
+      type: git
 components:
   - id: redhat/java11/latest
     type: chePlugin
+  - id: budparr.language-hugo-vscode
+    type: chePlugin
+    location: >-
+       https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode
   - id: redhat/dependency-analytics/latest
     type: chePlugin
   - mountSources: true
